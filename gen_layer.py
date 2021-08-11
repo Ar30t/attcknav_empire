@@ -14,10 +14,10 @@ import sys
 import os
 
 # Static ATT&CK Navigator layer JSON fields
-VERSION = "2.0"
+VERSION = "4.2
 NAME = "ATT&CK with Empire"
 DESCRIPTION = "ATT&CK Matrix Techniques used from PowerShell Empire"
-DOMAIN = "Galactic Empire"
+DOMAIN = "mitre-enterprise"
 
 # Changed to function
 def generate():
