@@ -14,7 +14,7 @@ import sys
 import os
 
 # Static ATT&CK Navigator layer JSON fields
-VERSION = "4.2
+VERSION = "4.2"
 NAME = "ATT&CK with Empire"
 DESCRIPTION = "ATT&CK Matrix Techniques used from PowerShell Empire"
 DOMAIN = "mitre-enterprise"
