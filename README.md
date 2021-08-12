@@ -13,7 +13,7 @@ Please note the layer generation portion (gen_layer.py) was developed by the
 # Using the script
 1. Perform red team engagement using PowerShell Empire, generate agent.log files by compromising hosts and using different modules.
 
-2. Run main Python script (attck_empire.py) in Powershell Empire downloads folder or point to specific agent.log file:<br /><br />
+2. Run main Python script (attcknav_empire.py) in Powershell Empire downloads folder or point to specific agent.log file:<br /><br />
 python attcknav_empire.py (Searches within sub-directories for agent.log files)<br />
 python attcknav_empire.py -a C:/tmp/agent.log
 
