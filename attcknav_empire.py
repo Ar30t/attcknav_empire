@@ -1,3 +1,5 @@
+#!/usr/bin/python
+#https://github.com/Ar30t/attcknav_empire
 import sys
 import os
 import argparse
@@ -534,6 +536,7 @@ def main():
         isGeneratorEmpty = True
 
         #Search for agent.log files based on current file path
+        #https://github.com/Ar30t/attcknav_empire
         file_path = ""
         for file_path in files_within("."):
             isGeneratorEmpty = False
