@@ -39,7 +39,7 @@ def generate():
     }
 
     # parse csv file, calculating a score for each technique and adding that to the layer
-    with open(args.input_fn, "rb") as csvfile:
+    with open(args.input_fn, "r", newline='') as csvfile:
         reader = csv.DictReader(csvfile, delimiter=",")
         for row in reader:
             # score each technique based on a simple formula
@@ -69,9 +69,9 @@ def generate():
     with open('att&ck_layer.json', 'w') as outfile:
         json.dump(layer_json, outfile, indent=4)
     cwd = os.getcwd()
-    print "\nOutput of layer successful: " + cwd + "\\att&ck_layer.json"
-    print "\nLayer view options:"  + "\n\t 1. MITRE-hosted ATT&CK Navigator: https://mitre.github.io/attack-navigator/enterprise/ " + \
-          "\n\t 2. Deploy own instance of ATT&CK Navigator: https://github.com/mitre/attack-navigator"
+    print("\nOutput of layer successful: " + cwd + "\\att&ck_layer.json")
+    print( "\nLayer view options:"  + "\n\t 1. MITRE-hosted ATT&CK Navigator: https://mitre.github.io/attack-navigator/enterprise/ " + \
+          "\n\t 2. Deploy own instance of ATT&CK Navigator: https://github.com/mitre/attack-navigator" )
 
 
 if __name__ == '__main__':
