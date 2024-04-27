@@ -14,8 +14,8 @@ Please note the layer generation portion (gen_layer.py) was developed by the
 1. Perform red team engagement using PowerShell Empire, generate agent.log files by compromising hosts and using different modules.
 
 2. Run main Python script (attcknav_empire.py) in Powershell Empire downloads folder or point to specific agent.log file:<br /><br />
-python attcknav_empire.py (Searches within sub-directories for agent.log files)<br />
-python attcknav_empire.py -a C:/tmp/agent.log
+python3 attcknav_empire.py (Searches within sub-directories for agent.log files)<br />
+python3 attcknav_empire.py -a C:/tmp/agent.log
 
 3.  View layer file by using MITRE's hosted instance of ATT&CK Navigator or spin up your own environment:<br /><br />
 MIRE Hosted - https://mitre.github.io/attack-navigator/enterprise/<br />
