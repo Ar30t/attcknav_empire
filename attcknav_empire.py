@@ -518,33 +518,32 @@ def main():
 
     csvData = [['TechID', 'Software', 'Groups', 'References']]
 
-    with open('attack.csv', 'wb') as csvFile:
+    with open('attack.csv', 'w', newline='') as csvFile:
         writer = csv.writer(csvFile)
         writer.writerows(csvData)
 
         parser = argparse.ArgumentParser()
         requiredNamed = parser.add_argument_group('required named arguments')
         requiredNamed.add_argument("-a", "--Agent", action="store", dest="input_agent_file",
-                        required=False, help="Use argument (-a) to point to PowerShell Empire Agent.log file "
-                                             "or leave off argument and script will search current directory "
-                                             "and sub-directories")
-
+                                    required=False, help="Use argument (-a) to point to PowerShell Empire Agent.log file "
+                                                        "or leave off argument and script will search current directory "
+                                                        "and sub-directories")
 
         args = parser.parse_args()
 
         # Set flag to prevent error if no agent.log files found
         isGeneratorEmpty = True
 
-        #Search for agent.log files based on current file path
-        #https://github.com/Ar30t/attcknav_empire
+        # Search for agent.log files based on current file path
+        # https://github.com/Ar30t/attcknav_empire
         file_path = ""
         for file_path in files_within("."):
             isGeneratorEmpty = False
             if args.input_agent_file is not None and file_path is not None:
-                print "Processing Empire Agent log file: " + args.input_agent_file
+                print("Processing Empire Agent log file: " + args.input_agent_file)
 
-                #Go through agent.log file then map ATT&CK techniques used by any PowerShell Empire modules
-                with open(args.input_agent_file, 'rb') as file:
+                # Go through agent.log file then map ATT&CK techniques used by any PowerShell Empire modules
+                with open(args.input_agent_file, 'r', newline='') as file:
                     for line in file:
                         for module, technique in techniques.items():
                             for id in technique:
@@ -554,10 +553,10 @@ def main():
                 time.sleep(10)
 
             else:
-                print "Processing Empire Agent log file: " + file_path
+                print("Processing Empire Agent log file: " + file_path)
 
-                #Go through each agent.log file then map ATT&CK techniques used by any PowerShell Empire modules
-                with open(file_path, 'rb') as file:
+                # Go through each agent.log file then map ATT&CK techniques used by any PowerShell Empire modules
+                with open(file_path, 'r', newline='') as file:
                     for line in file:
                         for module, technique in techniques.items():
                             for id in technique:
@@ -567,9 +566,9 @@ def main():
                 # csvFile.close()
                 time.sleep(10)
 
-        if args.input_agent_file is None and file_path is "":
-                print "\nNo Empire agent.log file was referenced or found in current directory/sub-directories"
-                exit()
+        if args.input_agent_file is None and file_path == "":
+            print("\nNo Empire agent.log file was referenced or found in current directory/sub-directories")
+            exit()
 
 if __name__ == '__main__':
     main()
